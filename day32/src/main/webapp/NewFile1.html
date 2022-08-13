@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>키보드 이벤트</title>
+<style type="text/css">
+	input[name="test"]{
+		border:3px solid black;
+	}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+	function func(event){
+		console.log(event.keyCode); //keyCode : 어떤키를 눌렀는지 확인할 때 > 아스키코드로 보여줌
+	}
+</script>
+
+<input type="text" onkeydown="func(event)" name="test" placeholder="console 확인">
+
+</body>
+</html>

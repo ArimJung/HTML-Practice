@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>innerHTML</title>
+<style type="text/css">
+   .container{
+      background-color: lightgray;
+      padding: 10px;
+   }
+   .container div{
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: coral;
+   }
+</style>
+</head>
+<body>
+
+<div class="container"></div>
+
+<script type="text/javascript">
+   var container=document.querySelector('.container');
+   container.onclick=function(){
+      this.innerHTML='<div></div>';
+   }
+</script>
+
+</body>
+</html>

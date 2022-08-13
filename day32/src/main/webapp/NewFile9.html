@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<button onclick="btn()">버튼</button>
+
+<script type="text/javascript">
+   function btn(){
+      var btn=document.createElement('button');
+      btn.onclick=function(){
+         alert('새로만든버튼클릭함!');
+      }
+      var msg=document.createTextNode('새로만든버튼');
+      btn.appendChild(msg);
+      document.body.appendChild(btn);
+   }
+</script>
+
+</body>
+</html>

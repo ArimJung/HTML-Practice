@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자</title>
+</head>
+<body>
+<script type="text/javascript">
+   function func(){
+      document.getElementById('test').style.backgroundColor="red";
+      
+      var elems=document.getElementsByClassName('test2'); // 요소'들'이기 때문에 바로 스타일 적용이 어려움 >> 그래서 변수에 담는다
+      for(var i=0;i<elems.length;i++){
+         elems[i].style.backgroundColor='orange';
+      }
+   }
+</script>
+
+<button type="button" onclick="func()">색깔 바꾸기</button>
+<ul>
+   <li>1</li>
+   <li class="test2">2</li>
+   <li id="test">3</li>
+   <li class="test2">4</li>
+</ul>
+
+</body>
+</html>

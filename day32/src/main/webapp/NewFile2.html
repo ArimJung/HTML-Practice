@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>키보드이벤트 예제풀이</title>
+</head>
+<body>
+<script type="text/javascript">
+   var input=prompt('010-xxxx-xxxx의 형태로 입력해주세요.');
+   var arr=input.split('-');
+   console.log(arr[0]+'-'+arr[1]+'-****');
+   
+   /*
+   var input =prompt('전화번호 입력 (010-xxxx-xxxx)');
+   var phoneNum =input.substring(0,9) + '****';
+			console.log(num);
+   */		
+   
+   function func(event){
+      if(event.keyCode==13){ 
+         alert(event.target.value);
+      }
+   }
+</script>
+<input type="text" onkeydown="func(event)">
+</body>
+</html>
